@@ -3,7 +3,6 @@
 
 Graph::Graph()
 {
-  numVertices = 0;
 }
 
 void Graph::push_back(int src, int dst)
@@ -18,13 +17,11 @@ void Graph::push_back(int src, int dst)
     srcNode.reset(new Node());
 
     keys.push_back(src);
-    numVertices++;
   }
   if (dstNode == nullptr)
   {
     dstNode.reset(new Node());
     keys.push_back(dst);
-    numVertices++;
   }
 
   addEdge(src, dst);

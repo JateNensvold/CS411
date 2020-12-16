@@ -11,7 +11,6 @@
 class Graph
 {
 public:
-    int numVertices;
     std::unordered_map<int, std::unique_ptr<Node>> sites;
     std::vector<int> keys;
 

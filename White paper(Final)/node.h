@@ -6,9 +6,8 @@
 class Node
 {
 public:
-    int numEdges;
+    int visits;
     std::vector<int> edges;
-
 public:
     Node();
     void push_back(int v);
